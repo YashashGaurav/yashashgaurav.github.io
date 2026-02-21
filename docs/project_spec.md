@@ -11,17 +11,17 @@
 - [x] Base custom CSS (`assets/css/extended/custom.css`)
 - [x] Syntax highlighting, Fuse.js search configured
 
-### 🚧 MVP: Landing Page
+### ✅ MVP: Landing Page
 - [x] Profile mode landing (image, title, subtitle)
 - [x] Social links: GitHub, LinkedIn, X
 - [x] Nav menu: home, about, photography, posts, projects
 - [x] Profile buttons: photography, posts, posts
 - [x] 4 initial blog posts published
-- [ ] About page (`content/about.md`) with placeholder CV/Resume links
-- [ ] Photography section → redirect to Adobe Portfolio
-- [ ] `content/photography/` and `content/projects/` sections exist so profile buttons don't 404
+- [x] About page (`content/about.md`) with placeholder CV/Resume links
+- [x] Photography section → redirect to Adobe Portfolio
+- [x] `content/photography/` and `content/projects/` sections exist so profile buttons don't 404
 
-### 📋 v1: CV Page
+### 🚧 v1: CV Page
 - [ ] `data/experience.yaml` populated (Ripple, CMU, FA1, NIT Silchar)
 - [ ] `layouts/partials/cv.html` — two-column: timeline (left) + accordion details (right)
 - [ ] `assets/css/extended/cv-layout.css` — CV-specific styles
