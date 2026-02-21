@@ -74,10 +74,6 @@ This site is automatically deployed to GitHub Pages using GitHub Actions. The wo
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Feel free to open issues or submit pull requests if you find any bugs or have suggestions for improvements.
-
 ## 📞 Contact
 
 - **GitHub**: [@YashashGaurav](https://github.com/YashashGaurav)

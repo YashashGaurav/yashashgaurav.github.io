@@ -59,7 +59,8 @@ node_modules/
 # Hugo cache
 /tmp/
 
-# GitHub Copilot related files
+# Vibe Coding related files
 .copilot-instructions.md
 copilot-instructions.md
 .github/chatmodes/*
+.playwright-mcp/

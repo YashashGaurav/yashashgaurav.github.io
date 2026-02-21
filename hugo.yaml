@@ -20,7 +20,18 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Yashash Gaurav"
   description: "Applied Scientist at Ripple Labs - LLM systems, retrieval, evaluation, and inference optimization"
-  keywords: [AI, Machine Learning, LLM, Applied Science, Ripple, CMU, Algorithms, Python, Inference Optimization]
+  keywords:
+    [
+      AI,
+      Machine Learning,
+      LLM,
+      Applied Science,
+      Ripple,
+      CMU,
+      Algorithms,
+      Python,
+      Inference Optimization,
+    ]
   author: "Yashash Gaurav"
   images: ["/images/mymemoji_withbg.png"] # Add your open graph image
   DateFormat: "January 2, 2006"
@@ -66,12 +77,12 @@ params:
     imageHeight: 150
     imageTitle: "Yashash Gaurav"
     buttons:
-      - name: Posts
+      - name: photography
+        url: photography
+      - name: posts
         url: posts
-      - name: Tags
-        url: tags
-      - name: About
-        url: about
+      - name: projects
+        url: projects
 
   # home-info mode (alternative to profile mode)
   # homeInfoParams:
@@ -83,15 +94,13 @@ params:
       url: "https://github.com/YashashGaurav"
     - name: linkedin
       url: "https://linkedin.com/in/yashashgaurav"
-    - name: twitter
-      url: "https://twitter.com/yashashgaurav"
-    - name: email
-      url: "mailto:your-email@example.com"
+    - name: x
+      url: "https://x.com/yashashgaurav"
 
   analytics:
     google:
       SiteVerificationTag: "" # Add your Google Search Console verification tag
-    
+
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
@@ -124,19 +133,22 @@ menu:
       name: about
       url: /about/
       weight: 20
+    - identifier: photography
+      name: photography
+      url: /photography/
+      weight: 30
     - identifier: posts
       name: posts
       url: /posts/
-      weight: 30
-    - identifier: categories
-      name: categories
-      url: /categories/
       weight: 40
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: projects
+      name: projects
+      url: /projects/
       weight: 50
-
+    # - identifier: tags
+    #   name: tags
+    #   url: /tags/
+    #   weight: 50
 
 # Read: https://github.com/reorx/hugo-PaperModX/docs/faq/#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
