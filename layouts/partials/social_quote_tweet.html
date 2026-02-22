@@ -1,0 +1,20 @@
+{{- /* Override of PaperModX social_quote_tweet.html — updated getJSON -> resources.GetRemote for Hugo 0.126+ */ -}}
+<div class="tweet social-quote">
+  <div class="title">
+    {{ safeHTML (index site.Data.svg "twitter-simple") }}
+    {{ with .title }}<span>{{ . }}</span>{{ end }}
+  </div>
+
+  {{- $dnt := true -}}
+  {{- $url := printf "https://twitter.com/%v/status/%v" .user .id -}}
+  {{- $query := querify "url" $url "dnt" $dnt -}}
+  {{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
+  {{- with resources.GetRemote $request -}}
+    {{- with .Err -}}
+      <p>Error loading tweet.</p>
+    {{- else -}}
+      {{- $json := . | transform.Unmarshal -}}
+      {{- replaceRE "<script.+/script>" "" $json.html | safeHTML -}}
+    {{- end -}}
+  {{- end -}}
+</div>

@@ -1,0 +1,81 @@
+/* Custom CSS for Yashash Gaurav's website */
+
+:root {
+    --link-color: #0066cc;
+    --link-hover-color: #0052a3;
+    --link-underline-shadow: 0 1px 0 var(--link-color);
+    --link-hover-underline-color: #0052a3;
+    --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+}
+
+/* Custom note box styling */
+.note {
+    background: #f0f8ff;
+    border-left: 4px solid #0066cc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+/* Custom highlight box */
+.custom-highlight {
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+    font-weight: 500;
+}
+
+/* Improve code block styling */
+pre {
+    border-radius: 8px !important;
+}
+
+/* Custom styling for profile mode buttons */
+.profile .buttons a {
+    transition: all 0.3s ease;
+}
+
+.profile .buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some spacing improvements */
+.post-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Improve list styling */
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1rem;
+}
+
+.post-content li {
+    margin-bottom: 0.3rem;
+}
+
+/* Better table styling */
+.post-content table {
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.post-content table th,
+.post-content table td {
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.post-content table th {
+    background: var(--theme);
+    font-weight: 600;
+}
