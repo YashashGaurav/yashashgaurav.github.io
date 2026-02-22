@@ -79,3 +79,168 @@ pre {
     background: var(--theme);
     font-weight: 600;
 }
+
+/* ============================================================
+   Project Cards
+   ============================================================ */
+
+/* Context badge (personal / work / college) */
+.project-context {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15em 0.55em;
+    border-radius: 999px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    line-height: 1.6;
+}
+
+.project-context--personal {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.project-context--work {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.project-context--college {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+.dark .project-context--personal {
+    background: #1e3a5f;
+    color: #93c5fd;
+}
+
+.dark .project-context--work {
+    background: #14532d;
+    color: #86efac;
+}
+
+.dark .project-context--college {
+    background: #431407;
+    color: #fdba74;
+}
+
+/* Tech badges */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2em 0.6em;
+    border-radius: 999px;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+/* Project footer layout */
+.project-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+/* Project links */
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--secondary);
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 0.15em 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.project-link:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+/* Single page project-meta block */
+.project-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin: 0 0 1.5rem;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.project-meta-badges {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+/* Status badges */
+.project-status {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15em 0.55em;
+    border-radius: 999px;
+    line-height: 1.6;
+}
+
+.project-status--completed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.project-status--in-progress {
+    background: #fef9c3;
+    color: #a16207;
+}
+
+.project-status--archived {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+.dark .project-status--completed {
+    background: #14532d;
+    color: #86efac;
+}
+
+.dark .project-status--in-progress {
+    background: #422006;
+    color: #fde047;
+}
+
+.dark .project-status--archived {
+    background: #1f2937;
+    color: #9ca3af;
+}
