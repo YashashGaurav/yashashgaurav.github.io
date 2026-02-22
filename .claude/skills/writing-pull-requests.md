@@ -5,6 +5,7 @@ description: Write pull requests for code changes
 
 # Pull Request Template
 
+```md
 ## Description
 Please include a summary of the changes and the related issue. 
 
@@ -28,3 +29,7 @@ Add any other relevant information or screenshots here.
 
 ---
 For more details, see [CUSTOM_INSTRUCTIONS.md](./CUSTOM_INSTRUCTIONS.md) and the official Hugo and PaperModX documentation.
+---
+```
+
+Instruction for Agent: Never Co-Author or add ads like '🤖 Generated with [Claude Code](https://claude.com/claude-code)'
