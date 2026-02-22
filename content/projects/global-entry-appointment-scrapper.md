@@ -2,9 +2,13 @@
 title: "Global Entry Appointment Scrapper"
 date: 2026-02-22
 draft: false
-tags: ["Python", "Side Project"]
+tags: ["Python", "GitHub Actions"]
 summary: "I forked a bot to beat the Global Entry Appointment hell"
 showToc: true
+params:
+  context: "personal"
+  projectURL: "https://github.com/YashashGaurav/global-entry-scraper"
+  status: "completed"
 ---
 
 # Forked a bot to beat the Global Entry Appointment hell
@@ -30,7 +34,7 @@ Got my appointment in the week I finished coding it. Turns out CBP drops new slo
 
 ## The Catch
 
-Everyone's building these now, so appointments are getting snatched up even faster. It's an arms race, but at least it's a free arms race.
+Everyone's building these now, so appointments are getting snatched up even faster. It's an arms race, but at least it's a more democratized arms race.
 
 - Code: [github.com/YashashGaurav/global-entry-scraper](https://github.com/YashashGaurav/global-entry-scraper)
 - Disclaimer: Use responsibly, don't spam the CBP API, etc.
