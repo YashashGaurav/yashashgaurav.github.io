@@ -133,18 +133,22 @@ menu:
       name: about
       url: /about/
       weight: 20
+    - identifier: cv
+      name: cv
+      url: /cv/
+      weight: 30
     - identifier: photography
       name: photography
       url: /photography/
-      weight: 30
+      weight: 40
     - identifier: posts
       name: posts
       url: /posts/
-      weight: 40
+      weight: 50
     - identifier: projects
       name: projects
       url: /projects/
-      weight: 50
+      weight: 60
     # - identifier: tags
     #   name: tags
     #   url: /tags/

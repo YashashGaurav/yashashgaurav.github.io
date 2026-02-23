@@ -1,0 +1,135 @@
+/* ============================================================
+   CV Page Layout
+   ============================================================ */
+
+/* Resume download bar — mirrors .project-meta pattern */
+.cv-resume-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin: 0 0 2rem;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.cv-resume-bar a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 500;
+    color: var(--secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.cv-resume-bar a:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+/* Section headings */
+.cv-section-heading {
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--border);
+}
+
+/* Individual entry */
+.cv-entry {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.cv-entry:last-child {
+    border-bottom: none;
+}
+
+/* Two-column grid: meta left, description right */
+.cv-entry-body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 1rem 1.5rem;
+    align-items: start;
+}
+
+/* Left column: role, location, dates */
+.cv-entry-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1rem;
+    color: var(--secondary);
+    line-height: 1.5;
+}
+
+.cv-entry-role {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Right column: description prose */
+.cv-entry-description {
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+.cv-entry-description p {
+    margin: 0 0 0.75rem;
+}
+
+.cv-entry-description p:last-child {
+    margin-bottom: 0;
+}
+
+.cv-entry-description ul {
+    margin: 0.5rem 0 0.75rem 1.25rem;
+    padding: 0;
+}
+
+.cv-entry-description li {
+    margin-bottom: 0.3rem;
+}
+
+/* GPA line in education */
+.cv-entry-gpa {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+/* Courses block — flat prose */
+.cv-entry-courses {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--border);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--secondary);
+}
+
+.cv-entry-courses p {
+    margin: 0 0 0.5rem;
+}
+
+.cv-entry-courses p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive: stack to single column on mobile */
+@media (max-width: 768px) {
+    .cv-entry-body {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .cv-entry-meta {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px dashed var(--border);
+    }
+}

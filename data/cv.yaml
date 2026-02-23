@@ -1,0 +1,130 @@
+resume_url: "https://drive.google.com/file/d/1yQ3PgLuK9CJut4pXu-LgdC-cdeEJK_g9/view?usp=drive_link"
+
+experience:
+  - id: ripple-labs-scientist
+    company: Ripple Labs
+    role: "👨‍🏫 Applied Scientist"
+    location: "San Francisco, CA 🌉"
+    dates: "Feb 2023 - now"
+    description: |
+      As an applied Scientist my primary work is two folded:
+
+      Firstly, I collaborate with other researchers on building machine learning models meant to improve Ripple's solutions for facing digital asset markets. This requires me to apply my ML modeling and statistical analysis skills to translate business problems into machine learning problems in order to develop optimal solutions. Projects in this domain include — creating Anomaly Detection model as a service for real time payments/trade data, creating models for payment orchestration, and models analyzing market micro-structure.
+
+      Secondly, I contribute to tooling that allows for the above models to be built/experimented on at scale using our own Experimentation Bench. Once a good enough model is built, I also contribute to making sure the models are seamlessly deployed into production. This allows me to tackle real-world issues such as missing or inconsistent data, its latency, and data cleanness efforts. Continuous deployment and experimentation keeps me close to the source of truth, its speculations, and its results.
+
+      Apart from the above, I also lead and collaborate on the AI (read LLM) application efforts in the company on varied use cases. Our latest effort is on LLM fine tuning (or its need thereof) to help builders with improving code coverage across our proprietary codebase in our own style of codebase maintenance.
+
+  - id: lti-cmu-research
+    company: Language Technologies Institute, Carnegie Mellon University
+    role: "🧐 Graduate Research Assistant"
+    location: "Pittsburgh, PA ⛷️"
+    dates: "Aug '22 - May '23"
+    description: |
+      I am working on a Few Shot discriminative feature representation learning model for audio classification with minimal data.
+
+  - id: ripple-labs-intern
+    company: Ripple Labs
+    role: "🧑‍🔬 Applied Science Intern"
+    location: "San Francisco, CA 🌁"
+    dates: "May '22 - Aug '22"
+    description: |
+      Working with the wonderful ML/AI Applied science team at Ripple for Automated Trading use case.
+
+      BRB asking my manager how much can I disclose 😄
+
+  - id: lti-cmu-ta
+    company: Language Technologies Institute, Carnegie Mellon University
+    role: "🧑‍🏫 Teaching Assistant"
+    location: "Pittsburgh, PA 🇺🇸"
+    dates: "May '22 - Aug '22"
+    description: |
+      Proudly, TA for the most acclaimed class for Deep Learning on the Planet. [Prof. Bhiksha Raj](http://mlsp.cs.cmu.edu/people/bhiksha/) has been taking this legendary class for years, and for the fall of 2022, I with my TA Group is helping him in designing the lectures, the home works, the support mechanisms, and the infrastructure to bring the most rigorous coursework on Deep Learning anywhere.
+
+  - id: iii-cmu
+    company: Integrated Innovation Institute, Carnegie Mellon University
+    role: "👨🏽‍🔧 Technology Support Associate"
+    location: "Pittsburgh, PA 🇺🇸"
+    dates: "Jan '22 - Apr '22"
+    description: |
+      For a long time, I have wanted to know if Innovation can be dealt with as if it were a process. Being at CMU, I thought I should be able to learn it somewhere right? Arguably one of the most innovative schools on the planet. Post some research, I found out [Prof. Jason](https://www.cmu.edu/iii/innovators/faculty-staff/smithj.html) was teaching, one last time, his famous Grand Challenge Innovation class in the spring of 2022 at CMU. I had to take it. Unfortunately, I had already overbooked myself for the spring and could not have taken his class. Rather, I applied to help him with Technology setup throughout the semester! I got paid to attend his brilliant class. What more could I ask? What I learned:
+
+      - The formal process for innovation and ideation.
+      - User Research Methodologies
+      - Product Conceptualization Techniques (Importance/Difficulty, Decision Matrix, etc.)
+      - How to apply emerging technologies to solve grand challenges through a physical system
+      - How to set up dependable Zoom Sessions for large classrooms
+
+  - id: first-american-india
+    company: First American India
+    role: "👨🏽‍💻 R&D Engineer"
+    location: "Bangalore, India 🇮🇳"
+    dates: "Jul 2017 - Jan 2021"
+    description: |
+      As I grew up and gained exposure to the world of computing and the breakthrough research in the world, I found that I wanted to be closer to research and then its implementation as products and services.
+
+      I negotiated with my manager to help me transition to an Applied Research Team. Given my performance and my suggestions, agreed and soon I was only the second recruit at Eagle Labs — our company's newly formed Applied Research Team. Here I was able to work on some of the coolest projects. Some of my achievements:
+
+      - Implemented phishing discriminant XGBoost model and productized its APIs on Palo Alto Network's Cortex XSOAR platform to filter through approximately 17,000 emails a day.
+      - Delivered a Signature Extraction model for legal property documents using an ensemble of SOTA Convolutional Neural Networks (YOLO and ResNet), helping in 16 unique business process improvements.
+      - Developed a chatbot framework for multi-party service integration with endpoint integrations to Alexa and Google Home and streamlined information access for six customer-facing applications.
+      - Implemented an analytics dashboard for customer research and segmentation using Tableau and custom D3.js components to fine-tune customer retention and acquisition strategies.
+
+  - id: sightgrab
+    company: Sightgrab
+    role: "👨🏽‍💻 Co-founder/Head of Design"
+    location: "Dhanbad, India 🇮🇳"
+    dates: "Oct 2020 - Aug 2021"
+    description: |
+      I, my cousin, and a friend of mine wanted to taste what it means to do business. We found out that we were good at Creative Designs, Social Media, and Analytical tools. We employed all of that and came up with the idea of creating Sightgrab — One stop shop for Mass Media marketing, from strategy to implementation and monitoring. We sold our tools and services to the market that existed in Dhanbad and beyond making over Rs. 300K in less than a year with a team of 7 people!
+
+  - id: myskoolapp-africa
+    company: "MySkoolApp-Africa"
+    role: "👨🏽‍💻 Product Research Intern"
+    location: "Nairobi, Kenya 🇰🇪"
+    dates: "May 2017 - Jul 2017"
+    description: |
+      I was in Kenya with my parents when I stumbled upon this EdTech SaaS startup working off one corner of the workspace my father was working at. I asked my father what the product was about and he asked me to talk to the core team itself. I learned they were working on making education more accessible to economically weak students of Kenya. I was so interested in their work that they offered me an internship to help them launch their product. I, obviously, agreed.
+
+      I helped them with the planning and presentation of their MVP to prospective investors. I went on to help them with the coordination of their off-shore software teams. Later, I did in-person school surveys where we pitched the product and took note of their grievances. This helped us understand the need better and plan our course forward. I even pitched the startup's financial projections to investors and helped secure their first line of credit.
+
+  - id: nga-hr
+    company: NGA HR - now Alight
+    role: "💽 Data Analyst Intern"
+    location: "Hyderabad, India 🇮🇳"
+    dates: "May 2016 - Jul 2016"
+    description: |
+      Got to work on process mapping the current state of work at NGA and present enhancement proposals — Lean Management under [Madhu Kiran](https://www.linkedin.com/in/madhu-kiran-21993631/).
+
+  - id: erudite-web
+    company: Erudite Web Solutions
+    role: "👨‍💻 Web Development Intern"
+    location: "Hyderabad, India 🇮🇳"
+    dates: "May 2014 - Jul 2014"
+    description: |
+      Finding a web-dev job for an electrical engineering student used to be hard back then. Fortunately Erudite offered me the opportunity to work on websites for a large Oil and Gas firm that wanted their electronic mailing systems and web portfolio to be set up. I soon became the single resource working on the project and delivered websites designed in vanilla JS, and PHP and set up the complete MX service for the client based on the then Google Workspace stack.
+
+education:
+  - id: cmu
+    school: Carnegie Mellon University
+    degree: "🎓 Masters of Information Systems Management"
+    location: "Pittsburgh PA 🇺🇸"
+    dates: "Aug '21 - Dec '22"
+    gpa: "GPA: 4.0 GPA"
+    courses: |
+      **Fall 2022:** Capstone Project with [Verizon Threat Research Advisory Center](https://www.verizon.com/business/resources/reports/verizon-threat-research-advisory-center/), Data Science and Big Data, Design Thinking, Tech Entrepreneurship and Innovation.
+
+      **Spring 2022:** [ML with Large Datasets (10-605)](https://10605.github.io/), [Deep Learning (11-785)](https://deeplearning.cs.cmu.edu/), Business Writing, Professional Speaking, Managing Digital Transformations, Decision Making under Uncertainty.
+
+      **Fall 2021:** [Machine Learning (10-601)](http://www.cs.cmu.edu/~mgormley/courses/10601/), [Distributed Systems](https://api.heinz.cmu.edu/courses_api/course_detail/95-702/), [Data Focused Python](https://api.heinz.cmu.edu/courses_api/course_detail/95-888/), Data Structures for Application Programmers (Audit), Organisational Design and Implementation, Economic Analysis, [Managing Disruptive Technologies](https://api.heinz.cmu.edu/courses_api/course_detail/95-723/).
+
+      **Spring 2021:** [OOPs in Java](https://api.heinz.cmu.edu/courses_api/course_detail/95-712/), [Database Management](https://api.heinz.cmu.edu/courses_api/course_detail/95-703/).
+
+  - id: nit-silchar
+    school: National Institute of Technology, Silchar
+    degree: "👨🏽‍🎓 Bachelor of Technology in Electrical Engineering"
+    location: "Silchar, Assam 🇮🇳"
+    dates: "Aug '13 - May '17"
+    gpa: "GPA: 7.89 CGPA"
+    courses: |
+      Courses that were the most impactful for me: Network Theory, Software Engineering, and Neural Network.

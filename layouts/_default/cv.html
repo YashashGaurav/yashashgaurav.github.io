@@ -1,0 +1,112 @@
+{{- define "main" }}
+
+{{- $cv := site.Data.cv }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{- .Title -}}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{- .Description -}}
+    </div>
+    {{- end }}
+  </header>
+
+  <div class="post-content">
+
+    {{/* Resume bar */}}
+    {{- if $cv.resume_url }}
+    <div class="cv-resume-bar">
+      <span>📄 One-page resume:</span>
+      <a href="{{ $cv.resume_url }}" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        Download / View Resume
+      </a>
+    </div>
+    {{- end }}
+
+    {{/* Custom TOC built from data */}}
+    <div class="toc">
+      <details open>
+        <summary accesskey="c" title="(Alt + C)">
+          <span class="details">Table of Contents</span>
+        </summary>
+        <div class="inner">
+          <ul>
+            <li><a href="#work-experience">Work Experience</a>
+              <ul>
+                {{- range $cv.experience }}
+                <li><a href="#{{ .id }}">{{ .company }}</a></li>
+                {{- end }}
+              </ul>
+            </li>
+            <li><a href="#education">Education</a>
+              <ul>
+                {{- range $cv.education }}
+                <li><a href="#{{ .id }}">{{ .school }}</a></li>
+                {{- end }}
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    {{/* Work Experience */}}
+    <h2 id="work-experience" class="cv-section-heading">Work Experience</h2>
+
+    {{- range $cv.experience }}
+    <div class="cv-entry" id="{{ .id }}">
+      <h3>{{ .company }}</h3>
+      <div class="cv-entry-body">
+        <div class="cv-entry-meta">
+          <span class="cv-entry-role">{{ .role }}</span>
+          <span>{{ .location }}</span>
+          <span>{{ .dates }}</span>
+        </div>
+        <div class="cv-entry-description">
+          {{ .description | markdownify }}
+        </div>
+      </div>
+    </div>
+    {{- end }}
+
+    {{/* Education */}}
+    <h2 id="education" class="cv-section-heading">Education</h2>
+
+    {{- range $cv.education }}
+    <div class="cv-entry" id="{{ .id }}">
+      <h3>{{ .school }}</h3>
+      <div class="cv-entry-body">
+        <div class="cv-entry-meta">
+          <span class="cv-entry-role">{{ .degree }}</span>
+          <span>{{ .dates }}</span>
+          <span>{{ .location }}</span>
+          {{- if .gpa }}
+          <span class="cv-entry-gpa">{{ .gpa }}</span>
+          {{- end }}
+        </div>
+        <div class="cv-entry-description">
+          {{- if .courses }}
+          <div class="cv-entry-courses">
+            {{ .courses | markdownify }}
+          </div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+    {{- end }}
+
+  </div>{{/* end .post-content */}}
+
+</article>
+
+{{- end }}{{/* end main */}}
