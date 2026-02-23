@@ -70,8 +70,8 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "Hi, Yashash Gaurav"
-    subtitle: "Welcome to my Portfolio and Blog!"
+    title: "Yashash Gaurav"
+    subtitle: "Hi, welcome to my Portfolio and Blog!"
     imageUrl: "/images/mymemoji_withbg.png" # Add your profile image
     imageWidth: 150
     imageHeight: 150
@@ -133,22 +133,18 @@ menu:
       name: about
       url: /about/
       weight: 20
-    - identifier: cv
-      name: cv
-      url: /cv/
-      weight: 30
     - identifier: photography
       name: photography
       url: /photography/
-      weight: 40
+      weight: 30
     - identifier: posts
       name: posts
       url: /posts/
-      weight: 50
+      weight: 40
     - identifier: projects
       name: projects
       url: /projects/
-      weight: 60
+      weight: 50
     # - identifier: tags
     #   name: tags
     #   url: /tags/

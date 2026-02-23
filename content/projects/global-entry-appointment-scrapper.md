@@ -16,7 +16,7 @@ params:
 Global Entry appointments are impossible to get right now - some locations have zero availability for months, and when slots pop up, they're gone in minutes. Third-party services charge $29/month just to send you alerts [Global Entry appointment scraper](https://jamescalixto.com/global-entry-scraper/), which felt like highway robbery for something so simple.
 
 
-## My Solution - Forked and improved on a Appointment Scrapper.
+## My Solution - Forked and improved on an Appointment Scrapper.
 
 Built a Python scraper that:
 - Fetches Global Entry Appointments on a Schedule for location(s) of interest
