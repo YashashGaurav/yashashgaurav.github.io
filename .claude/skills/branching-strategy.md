@@ -26,6 +26,16 @@ yg/chore-update-deps
 - Description: lowercase kebab-case
 - Examples: `yg/add-projects-section`, `yg/fix-footer-links`
 
+## Merge Policy
+
+- **Squash merge only.** Merge commits and rebase merges are disabled on GitHub.
+- **Branch auto-deleted on merge.** GitHub deletes the remote head branch automatically after a PR is merged.
+- After merging, clean up the local branch manually:
+  ```bash
+  git checkout main && git pull
+  git branch -d yg/<description>
+  ```
+
 ## Workflow
 
 1. Create a feature branch from `main`:
@@ -36,7 +46,9 @@ yg/chore-update-deps
 2. Make commits using semantic prefixes (`feat:`, `fix:`, `chore:`, `docs:`, etc.)
 3. Push branch and open a PR targeting `main`
 4. CI checks must pass before merge
-5. Merge to `main` triggers GitHub Pages deployment
+5. Squash merge the PR — GitHub auto-deletes the remote branch
+6. Clean up local branch (see Merge Policy above)
+7. Merge to `main` triggers GitHub Pages deployment
 
 ## Commit Prefixes
 
