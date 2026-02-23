@@ -5,20 +5,24 @@ showToc: false
 hidemeta: true
 ---
 
-Applied Scientist at [Ripple Labs](https://ripple.com), working on LLM systems, retrieval, and evaluation. Previously at Carnegie Mellon University.
+I am an entrepreneurial-minded, technology-driven, problem-solving enthusiast, who is on a journey to fulfill his dreams of making 10,000 peoples lives better everyday with the product that he helps create. I call it `the 10,000 Dream`. 
+
+Professionally, I am currently a Senior Data Scientist at [Ripple Labs](https://ripple.com), working on problems in the world of AI in Data Engineering, and ML in Trading Systems. 
+
+I am most interested in self hosting, latest rumblings in Machine Learning, and clean coding.
 
 ---
 
 ## Work
 
-CV and detailed work history coming soon.
+Full work history and experience details on the [CV](/cv/) page.
 
-<!-- TODO: Link to /cv/ once v1 is built -->
+### Resume
+
+[Download / View Resume](https://drive.google.com/file/d/1yQ3PgLuK9CJut4pXu-LgdC-cdeEJK_g9/view?usp=drive_link) (Google Drive, opens in new tab)
 
 ---
 
-## Resume
+## Other Interests
 
-Resume PDF coming soon.
-
-<!-- TODO: Embed Google Viewer PDF once uploaded -->
+[Photography](https:photography.yashashgaurav.com), Homelabbing, Hackathons, Finance, and Paper Readings.

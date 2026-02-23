@@ -22,6 +22,12 @@
 - **filesystem**: (Native) For reading/writing local files.
 - **playwright/puppeteer** (Planned): For visual regression testing of the CV layout.
 
+## Branching
+
+- **`main` is the only PR target.** All feature branches merge into `main` — never into other feature branches.
+- Branch naming: `yg/<description>` (e.g. `yg/add-cv-layout`).
+- Always create a new branch from `main`: `git checkout main && git pull && git checkout -b yg/<description>`.
+
 ## Coding Standards
 
 - **RefactorAsYouWrite**: Keep CSS clean. Use Hugo `assets/css/extended` for custom styles.
