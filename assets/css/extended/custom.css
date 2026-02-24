@@ -114,18 +114,18 @@ pre {
 }
 
 .dark .project-context--personal {
-    background: #1e3a5f;
-    color: #93c5fd;
+    background: #1d4ed8;
+    color: #eff6ff;
 }
 
 .dark .project-context--work {
-    background: #14532d;
-    color: #86efac;
+    background: #15803d;
+    color: #f0fdf4;
 }
 
 .dark .project-context--college {
-    background: #431407;
-    color: #fdba74;
+    background: #c2410c;
+    color: #fff7ed;
 }
 
 /* Tech badges */

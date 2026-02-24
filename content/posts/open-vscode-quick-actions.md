@@ -10,7 +10,6 @@ description: "Set up a macOS Quick Action to open any folder in VS Code with a r
 cover:
   image: "/images/posts/open-vscode-quick-actions_cover.png"
   alt: "Windows right-click context menu showing Open with Code option"
-  hidden: false
 ---
 
 I have been struggling with dragging and dropping folders onto open VS Code instances to open folders for some time. I liked how you could right-click and open a folder on VS Code directly from the Right-Click Popup Menu on my Windows Machine (fig below):

@@ -10,7 +10,6 @@ description: "Step-by-step guide to remotely accessing an AWS Ubuntu instance fr
 cover:
   image: "/images/posts/remotely-access-aws-ubuntu-vnc_cover.png"
   alt: "XFCE desktop running on AWS Ubuntu accessed via VNC"
-  hidden: false
 ---
 
 I have broken my head open way too many times to not note this down for once and for all:

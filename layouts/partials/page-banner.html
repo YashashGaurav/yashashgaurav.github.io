@@ -1,6 +1,0 @@
-{{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
-{{- if and .Params.cover.image (not $isHidden) }}
-<div class="page-banner">
-  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" false) }}
-</div>
-{{- end }}

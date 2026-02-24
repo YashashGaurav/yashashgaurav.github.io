@@ -10,7 +10,6 @@ description: "Step-by-step guide to installing the Protocol Buffers compiler fro
 cover:
   image: "/images/posts/installing-protobuf-m1-mac_cover.png"
   alt: "Protocol Buffers logo"
-  hidden: false
 ---
 
 ## Prerequisites

@@ -102,7 +102,6 @@ params:
       SiteVerificationTag: "" # Add your Google Search Console verification tag
 
   cover:
-    hidden: false
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: false # show on single pages
 
@@ -149,6 +148,13 @@ menu:
     #   name: tags
     #   url: /tags/
     #   weight: 50
+
+module:
+  mounts:
+    - source: assets          # preserve default assets mount (required when mounts are configured)
+      target: assets
+    - source: static/images   # make static images available for Hugo processing
+      target: assets/images
 
 # Read: https://github.com/reorx/hugo-PaperModX/docs/faq/#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
