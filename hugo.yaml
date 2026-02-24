@@ -134,8 +134,10 @@ menu:
       weight: 20
     - identifier: photography
       name: photography
-      url: /photography/
+      url: https://photography.yashashgaurav.com
       weight: 30
+      params:
+        external: true
     - identifier: posts
       name: posts
       url: /posts/
