@@ -5,6 +5,9 @@ draft: false
 tags: ["Python", "GitHub Actions"]
 summary: "I forked a bot to beat the Global Entry Appointment hell"
 showToc: true
+cover:
+  image: "/images/global-entry-appointment-scrapper_cover.jpg"
+  alt: "Global Entry Appointment Scrapper"
 params:
   context: "personal"
   projectURL: "https://github.com/YashashGaurav/global-entry-scraper"

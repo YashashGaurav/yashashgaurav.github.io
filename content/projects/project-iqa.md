@@ -5,6 +5,9 @@ draft: false
 tags: ["Python", "Research", "Computer Vision"]
 summary: "Co-created NIT Silchar's Image Quality Assessment database and co-authored a paper submitted to IEEE InfoVis 2016"
 showToc: true
+cover:
+  image: "/images/project-iqa_cover.png"
+  alt: "Project IQA — Image Quality Assessment"
 params:
   context: "college"
   status: "completed"

@@ -102,9 +102,9 @@ params:
       SiteVerificationTag: "" # Add your Google Search Console verification tag
 
   cover:
-    hidden: true # hide everywhere but not in structured data
+    hidden: false
     hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hiddenInSingle: false # show on single pages
 
   editPost:
     URL: "https://github.com/YashashGaurav/yashashgaurav.github.io/tree/main/content"
