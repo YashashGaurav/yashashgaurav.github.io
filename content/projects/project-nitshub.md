@@ -5,6 +5,9 @@ draft: false
 tags: ["Raspberry Pi", "Linux", "Networking"]
 summary: "Built NIT Silchar's own intranet file-sharing hub on a Raspberry Pi — a self-driven side project from 2014"
 showToc: true
+cover:
+  image: "/images/project-nitshub_cover.png"
+  alt: "Project NITSHUB — Campus Intranet Hub"
 params:
   context: "college"
   status: "completed"

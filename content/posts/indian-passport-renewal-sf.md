@@ -10,7 +10,6 @@ description: "A step-by-step document covering Indian passport renewal in San Fr
 cover:
   image: "/images/posts/indian-passport-renewal-sf_cover.jpg"
   alt: "Indian passport"
-  hidden: false
 ---
 
 [Passport Renewal Steps (SF)](https://docs.google.com/document/d/1DSXFtlptP97V5xEft5WXP6xV_GaSylYdWr1V9jv09g4/edit?usp=drive_link)

@@ -5,6 +5,9 @@ draft: false
 tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Selenium", "BeautifulSoup"]
 summary: "Aggregated college data from across the web to help high school students find their ideal school — a CMU Data Focused Python project"
 showToc: true
+cover:
+  image: "/images/college-helper_cover.png"
+  alt: "College Helper Cover"
 params:
   context: "college"
   projectURL: "https://github.com/YashashGaurav/CollegeHelper"

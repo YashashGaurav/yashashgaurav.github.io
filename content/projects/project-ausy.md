@@ -5,6 +5,9 @@ draft: false
 tags: ["Python", "JavaScript", "Scikit-Learn"]
 summary: "Sound-reactive LED party lights driven by frequency band analysis — a NIT Silchar college project"
 showToc: true
+cover:
+  image: "/images/project-ausy_cover.jpg"
+  alt: "Project AUSY — Sound Reactive LED Party Lights"
 params:
   context: "college"
   status: "completed"

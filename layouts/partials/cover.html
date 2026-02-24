@@ -1,0 +1,33 @@
+{{- with .cxt}} {{/* Apply proper context from dict */}}
+{{- if (and .Params.cover.image (not $.isHidden)) }}
+{{- if $.IsHome }}
+{{/* List page: use theme's default cover rendering */}}
+{{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+<figure class="entry-cover">
+    {{- $cover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
+    {{- if $cover -}}
+        <img loading="lazy" src="{{ $cover.Permalink }}" alt="{{ $alt }}"
+             width="{{ $cover.Width }}" height="{{ $cover.Height }}">
+    {{- else }}
+        <img loading="lazy" src="{{ (.Params.cover.image) | absURL }}" alt="{{ $alt }}">
+    {{- end }}
+</figure>
+{{- else }}
+{{/* Single page: full-bleed banner with Hugo image processing */}}
+{{- $imgPath := strings.TrimLeft "/" .Params.cover.image }}
+{{- $img := resources.Get $imgPath }}
+{{- if $img }}
+  {{- $processed := $img.Resize "1920x webp q80" }}
+  <div class="page-banner">
+    <figure class="entry-cover">
+      <img src="{{ $processed.RelPermalink }}"
+           alt="{{ .Params.cover.alt | default .Title }}"
+           width="{{ $processed.Width }}"
+           height="{{ $processed.Height }}"
+           fetchpriority="high">
+    </figure>
+  </div>
+{{- end }}
+{{- end }}
+{{- end }}{{/* End image */}}
+{{- end -}}{{/* End context */}}

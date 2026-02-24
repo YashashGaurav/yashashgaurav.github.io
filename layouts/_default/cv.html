@@ -3,6 +3,8 @@
 {{- $cv := site.Data.cv }}
 
 <article class="post-single">
+  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title">

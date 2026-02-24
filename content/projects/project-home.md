@@ -5,6 +5,9 @@ draft: false
 tags: ["JavaScript", "ESP8266", "IoT", "Kinect"]
 summary: "Turned a college dorm room into a gesture-controlled smart home using ESP8266 and Microsoft Kinect — a NIT Silchar project"
 showToc: true
+cover:
+  image: "/images/project-home_cover.jpg"
+  alt: "Project Home — Gesture Controlled Smart Home"
 params:
   context: "college"
   status: "completed"

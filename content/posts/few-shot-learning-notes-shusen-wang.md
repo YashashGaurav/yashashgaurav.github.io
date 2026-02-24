@@ -10,7 +10,6 @@ description: "Notes from Prof Shusen Wang's lecture series on few-shot learning 
 cover:
   image: "/images/posts/few-shot-learning-notes-shusen-wang_cover.png"
   alt: "Few-shot learning illustration"
-  hidden: false
 ---
 
 ## Few-Shot Learning (1/3): Basic Concepts
