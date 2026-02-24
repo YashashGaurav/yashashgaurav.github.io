@@ -15,6 +15,7 @@
 
 - **/update-progress**: Updates `project_spec.md` checklist and `architecture_spec.md` if structure changed.
 - **/serve-test**: Starts `hugo server -D` and runs Playwright tests if available.
+- **/clean-worktrees**: Audits all worktrees, flags uncommitted changes, and removes the ones you no longer need.
 
 ## MCP Servers
 
