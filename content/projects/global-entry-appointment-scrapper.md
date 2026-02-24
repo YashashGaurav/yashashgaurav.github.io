@@ -1,6 +1,6 @@
 ---
 title: "Global Entry Appointment Scrapper"
-date: 2026-02-22
+date: 2025-08-12
 draft: false
 tags: ["Python", "GitHub Actions"]
 summary: "I forked a bot to beat the Global Entry Appointment hell"
