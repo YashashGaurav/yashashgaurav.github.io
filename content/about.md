@@ -11,7 +11,7 @@ I am an entrepreneurial-minded, technology-driven, problem-solving enthusiast, w
 
 ## Passions
 
-I am most interested in [Photography](https://photography.yashashgaurav.com), Self Hosting/Homelabbing, latest rumblings in Machine Learning, Hackathons, Finance, clean coding, and community Paper Reading!
+I am most interested in [Photography](https://photography.yashashgaurav.com), self-hosting/homelabbing, the latest rumblings in Machine Learning, hackathons, finance, clean coding, and community paper reading!
 
 ---
 
