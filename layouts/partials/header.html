@@ -130,6 +130,7 @@ function toggleThemeListener() {
             {{- $page_url:= $currentPage.Permalink }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             {{- $isActive := false }}
+            {{- $isExternal := hasPrefix .URL "http" }}
             {{- if eq .URL "/" }}
                 {{- $isActive = eq $currentPage.RelPermalink "/" }}
             {{- else }}
@@ -140,12 +141,12 @@ function toggleThemeListener() {
                 {{- if $is_search -}}data-no-instant{{- end -}}
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
                 {{- if $isActive }} class="active" {{- end }}
-                {{- if .Params.External }} target="_blank" {{- end }}
+                {{- if $isExternal }} target="_blank" rel="noopener noreferrer" {{- end }}
                 >
                     {{- .Pre }}
                     {{- .Name -}}
                     {{ .Post -}}
-                    {{- if .Params.External }}<span class="external-link">{{ safeHTML (index $.Site.Data.svg "external-link") }}</span>{{- end }}
+                    {{- if $isExternal }}<span class="external-link">{{ safeHTML (index $.Site.Data.svg "external-link") }}</span>{{- end }}
                 </a>
             </li>
             {{- end }}
