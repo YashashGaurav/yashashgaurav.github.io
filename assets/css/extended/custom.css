@@ -30,6 +30,11 @@ pre {
     border-radius: 8px !important;
 }
 
+/* Normalize code block font size — monospace renders visually larger than sans-serif at the same px */
+.post-content pre code {
+    font-size: .85em;
+}
+
 /* Custom styling for profile mode buttons */
 .profile .buttons a {
     transition: all 0.3s ease;
