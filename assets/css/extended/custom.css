@@ -32,7 +32,13 @@ pre {
 
 /* Normalize code block font size — monospace renders visually larger than sans-serif at the same px */
 .post-content pre code {
-    font-size: .85em;
+    font-size: .90em;
+}
+
+@media screen and (max-width: 768px) {
+    .post-content pre code {
+        padding: 10px;
+    }
 }
 
 /* Custom styling for profile mode buttons */
