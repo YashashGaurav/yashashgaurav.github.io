@@ -1,1 +1,0 @@
-/Users/yashashgaurav/Documents/repos/2025Projects/yashashgaurav.github.io/CLAUDE.local.md
