@@ -67,3 +67,4 @@ copilot-instructions.md
 
 # Claude Code local settings (permissions, hooks) — machine-specific
 .claude/settings.local.json
+CLAUDE.local.md
