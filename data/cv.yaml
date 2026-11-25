@@ -1,19 +1,44 @@
 resume_url: "https://drive.google.com/file/d/1yQ3PgLuK9CJut4pXu-LgdC-cdeEJK_g9/view?usp=drive_link"
 
 experience:
-  - id: ripple-labs-scientist
+  - id: ripple-labs
     company: Ripple Labs
-    role: "👨‍🏫 Applied Scientist"
     location: "San Francisco, CA 🌉"
-    dates: "Feb 2023 - now"
-    description: |
-      As an applied Scientist my primary work is two folded:
+    positions:
+      - id: ripple-labs-senior-data-scientist
+        role: "🧑‍🔬 Senior Data Scientist"
+        dates: "Feb 2026 - Present"
+        description: |
+          I build LLM agents and evaluation systems on the data platform team, focused on democratizing analytics across the company.
 
-      Firstly, I collaborate with other researchers on building machine learning models meant to improve Ripple's solutions for facing digital asset markets. This requires me to apply my ML modeling and statistical analysis skills to translate business problems into machine learning problems in order to develop optimal solutions. Projects in this domain include — creating Anomaly Detection model as a service for real time payments/trade data, creating models for payment orchestration, and models analyzing market micro-structure.
+          - Certified and released text-to-SQL agents for payments, stablecoin, and XRP Ledger analytics. Established a release process built around benchmarks, accuracy-gap fixes, and out-of-sample evaluation.
+          - Co-built a company-wide MCP connector that routes questions from Claude Desktop, Claude mobile, and a Slack-native AI assistant to the three domain agents. It served 369 agent calls at about 94% success in its first two weeks.
+          - Co-led an LLM-driven data description system covering 81 warehouse assets and about 8k+ columns across six domains, shipped through Git-gated CI/CD. An A/B test showed a 36 percentage-point lift in materially correct text-to-SQL answers, from generated standard following descriptions alone.
+          - Built a 90-question routing evaluation harness. A supervisor-agent experiment nearly doubled p95 latency, so I recommended keeping the faster, cheaper instruction-based routing.
+          - Co-mentored an intern building an agent evaluation framework with deterministic checks, LLM-as-judge scoring, and full traces across three agent harnesses. The data team now uses it for AI assistant evaluation and model comparisons.
+          - Acted as product lead for a Slack-native AI assistant, owning user communications, documentation, and request triage across about 10 production releases.
 
-      Secondly, I contribute to tooling that allows for the above models to be built/experimented on at scale using our own Experimentation Bench. Once a good enough model is built, I also contribute to making sure the models are seamlessly deployed into production. This allows me to tackle real-world issues such as missing or inconsistent data, its latency, and data cleanness efforts. Continuous deployment and experimentation keeps me close to the source of truth, its speculations, and its results.
+      - id: ripple-labs-data-scientist
+        role: "🧑‍🔬 Data Scientist"
+        dates: "May 2025 - Feb 2026"
+        description: |
+          On the Data Design team, I worked on generative AI strategy, warehouse metadata, and data platform operations.
 
-      Apart from the above, I also lead and collaborate on the AI (read LLM) application efforts in the company on varied use cases. Our latest effort is on LLM fine tuning (or its need thereof) to help builders with improving code coverage across our proprietary codebase in our own style of codebase maintenance.
+          - To address missing warehouse metadata, I proposed a LLM driven solution, and drove agreement on a five-product plan which included a data dictionary standard, a linked glossary, a data discovery tool, and an LLM based metadata evaluation framework. I also helped build an automated the data description generation pipeline with LangGraph and MLflow tracing.
+          - Mentored our team's summer intern's LangGraph description prototype and co-led its rebuild into a production metadata generator with MLflow tracing and LLM-as-judge evaluation.
+          - Co-led a separate operational excellence intern project from proposal through evaluation and stakeholder adoption.
+
+      - id: ripple-labs-scientist
+        role: "👨‍🏫 Applied Scientist"
+        dates: "Feb 2023 - May 2025"
+        description: |
+          On the applied science team, I built production ML systems for liquidity, markets, and cross-border payments.
+
+          - Modeled market behavior with reinforcement learning and tree-based models to reduce crypto and fiat conversion costs across exchanges, supporting over $180M in weekly cross-border payments.
+          - Built on Databricks, an experimentation and backtesting platform, for statistical model graduation, while preserving experimentation results repository. New model types went from idea to evaluated build in under six weeks.
+          - Shipped real-time trade monitoring that cut anomaly identification time from days to under five minutes, and a density-estimation anomaly detection service for payment and trade metrics.
+          - Built market data and trade compliance audit pipelines.
+          - Led the evaluation and rollout of AI coding tools to 230+ engineers, saving about 2.3 hours per engineer per week.
 
   - id: lti-cmu-research
     company: Language Technologies Institute, Carnegie Mellon University
@@ -21,7 +46,7 @@ experience:
     location: "Pittsburgh, PA ⛷️"
     dates: "Aug '22 - May '23"
     description: |
-      I am working on a Few Shot discriminative feature representation learning model for audio classification with minimal data.
+      I worked on a Few Shot discriminative feature representation learning model for audio classification with minimal data.
 
   - id: ripple-labs-intern
     company: Ripple Labs
@@ -29,7 +54,7 @@ experience:
     location: "San Francisco, CA 🌁"
     dates: "May '22 - Aug '22"
     description: |
-      Working with the wonderful ML/AI Applied science team at Ripple for Automated Trading use case.
+      I worked with the wonderful ML/AI Applied science team at Ripple for Automated Trading use case.
 
       BRB asking my manager how much can I disclose 😄
 
