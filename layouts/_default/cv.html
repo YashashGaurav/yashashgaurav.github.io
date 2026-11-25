@@ -66,19 +66,46 @@
     <h2 id="work-experience" class="cv-section-heading">Work Experience</h2>
 
     {{- range $cv.experience }}
-    <div class="cv-entry" id="{{ .id }}">
+    {{- if .positions }}
+    {{/* Grouped entry: one company header, several roles stacked on a timeline */}}
+    <div class="cv-entry cv-entry-group cv-work-entry" id="{{ .id }}">
       <h3>{{ .company }}</h3>
-      <div class="cv-entry-body">
-        <div class="cv-entry-meta">
-          <span class="cv-entry-role">{{ .role }}</span>
-          <span>{{ .location }}</span>
-          <span>{{ .dates }}</span>
+      <div class="cv-group-location">{{ .location }}</div>
+      <div class="cv-positions cv-timeline">
+        {{- range .positions }}
+        <div class="cv-position" id="{{ .id }}">
+          <div class="cv-entry-body">
+            <div class="cv-entry-meta">
+              <span class="cv-entry-role">{{ .role }}</span>
+              <span>{{ .dates }}</span>
+            </div>
+            <div class="cv-entry-description">
+              {{ .description | markdownify }}
+            </div>
+          </div>
         </div>
-        <div class="cv-entry-description">
-          {{ .description | markdownify }}
+        {{- end }}
+      </div>
+    </div>
+    {{- else }}
+    <div class="cv-entry cv-work-entry" id="{{ .id }}">
+      <h3>{{ .company }}</h3>
+      <div class="cv-timeline">
+        <div class="cv-position">
+          <div class="cv-entry-body">
+            <div class="cv-entry-meta">
+              <span class="cv-entry-role">{{ .role }}</span>
+              <span>{{ .location }}</span>
+              <span>{{ .dates }}</span>
+            </div>
+            <div class="cv-entry-description">
+              {{ .description | markdownify }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    {{- end }}
     {{- end }}
 
     {{/* Education */}}

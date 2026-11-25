@@ -97,6 +97,54 @@
     margin-bottom: 0.3rem;
 }
 
+/* Grouped entry: one company header with stacked roles */
+.cv-group-location {
+    margin: -0.35rem 0 0.9rem;
+    font-size: 1rem;
+    color: var(--secondary);
+    line-height: 1.5;
+}
+
+/* Timeline rail: identical geometry for grouped and single-role entries.
+   The rail sits in the gutter below the company heading, so headings stay flush. */
+.cv-timeline {
+    margin-left: 0.4rem;
+    padding-left: 1.6rem;
+    border-left: 2px solid var(--border);
+}
+
+.cv-position {
+    position: relative;
+    padding: 1.25rem 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+.cv-position:first-child {
+    padding-top: 0.25rem;
+}
+
+.cv-position:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Timeline marker aligned with the role title */
+.cv-position::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.6rem - 5.5px);
+    top: 1.65rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--secondary);
+    opacity: 0.55;
+}
+
+.cv-position:first-child::before {
+    top: 0.65rem;
+}
+
 /* GPA line in education */
 .cv-entry-gpa {
     font-weight: 500;
@@ -131,5 +179,18 @@
     .cv-entry-meta {
         padding-bottom: 0.5rem;
         border-bottom: 1px dashed var(--border);
+    }
+
+    .cv-timeline {
+        margin-left: 0.1rem;
+        padding-left: 1.1rem;
+    }
+
+    .cv-position::before {
+        left: calc(-1.1rem - 5.5px);
+    }
+
+    .cv-position .cv-entry-meta {
+        border-bottom: none;
     }
 }
